@@ -4,7 +4,7 @@ socketCliente.on("productos", (products) => {
   updateProductList(products);
 });
 
-// Aactualizar lista de productos 
+// Aactualizar lista de productos http://localhost:8080/api/products
 
 function updateProductList(products) {
   let div = document.getElementById("list-products");
@@ -21,10 +21,11 @@ function updateProductList(products) {
           <h2>${product.title}</h2>
           <div class="size">
             <h3>${product.description}</h3>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>10</span>
+           
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
           <div class="color">
             <h3>${product.price}</h3>
@@ -32,6 +33,7 @@ function updateProductList(products) {
             <span></span>
             <span></span>
           </div>
+          <h3>${product.id}</h3>
           <a href="#">Comprar</a>
         </div>
       </div>
