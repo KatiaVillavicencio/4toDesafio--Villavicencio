@@ -29,7 +29,6 @@ router.get("/products/:pid", async (req, res) => {
      res.json({ status: "success", updatedproduct });
   });
 
-  
   router.delete("/products/:pid", async (req, res) => {
     const id=parseInt(req.params.pid)
     const deleteproduct = await manager.deleteProduct(id);
