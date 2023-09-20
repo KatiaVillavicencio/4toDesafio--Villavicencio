@@ -28,12 +28,16 @@ function updateProductList(products) {
             <span></span>
           </div>
           <div class="color">
-            <h3>${product.price}</h3>
+            <h3> Precio: S/.${product.price}</h3>
             <span></span>
             <span></span>
             <span></span>
+
           </div>
+          <div class="color">
           <h3>${product.id}</h3>
+          </div>
+
           <a href="#">Comprar</a>
         </div>
       </div>
