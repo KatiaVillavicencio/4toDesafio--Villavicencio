@@ -35,7 +35,7 @@ function updateProductList(products) {
 
           </div>
           <div class="color">
-          <h3>${product.id}</h3>
+          <h3>Id: ${product.id}</h3>
           </div>
 
           <a href="#">Comprar</a>
