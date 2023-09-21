@@ -33,7 +33,8 @@ const httpServer= app.listen(PORT,()=>{
 
 const pmanager=new ProductManager(__dirname+"/database/products.json")
  const socketServer = new  Server(httpServer)
-
+ 
+//socket-io//
 socketServer.on("connection",async (socket)=>{
     console.log("cliente conectado con id:" ,socket.id)
     const products = await pmanager.getProducts({});
